@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mvp_newsdemo.ui.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mContains"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/mRg"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mRb_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="首页"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/mRb_wechat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="微信精选"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/mRb_news"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="网易新闻"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/mRb_gank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="干货"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:button="@null"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
